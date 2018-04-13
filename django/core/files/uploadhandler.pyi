@@ -1,9 +1,9 @@
 # Stubs for django.core.files.uploadhandler (Python 3.5)
 
 from typing import Any, Dict, IO, Optional, Tuple
-from django.core.files.uploadedfile import UploadedFile, TemporaryUploadedFile
-from django.http.request import HttpRequest, QueryDict
-from django.utils.datastructures import MultiValueDict
+from django.core.files.uploadedfile import UploadedFile as UploadedFile, TemporaryUploadedFile as TemporaryUploadedFile
+from django.http.request import HttpRequest as HttpRequest, QueryDict as QueryDict
+from django.utils.datastructures import MultiValueDict as MultiValueDict
 
 class UploadFileException(Exception): ...
 

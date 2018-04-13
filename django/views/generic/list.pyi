@@ -1,10 +1,10 @@
 from typing import Any, Dict, List, Optional, Sequence, Tuple, Type
 
-from django.db.models import Model
-from django.db.models.query import QuerySet
-from django.core.paginator import Paginator  # type: ignore  # This will be fixed when adding the paginator module
-from django.http import HttpRequest, HttpResponse
-from django.views.generic.base import ContextMixin, TemplateResponseMixin, View
+from django.db.models import Model as Model
+from django.db.models.query import QuerySet as QuerySet
+from django.core.paginator import Paginator as Paginator # type: ignore  # This will be fixed when adding the paginator module
+from django.http import HttpRequest as HttpRequest, HttpResponse as HttpResponse
+from django.views.generic.base import ContextMixin as ContextMixin, TemplateResponseMixin as TemplateResponseMixin, View as View
 
 class MultipleObjectMixin(ContextMixin):
     allow_empty = ...  # type: bool

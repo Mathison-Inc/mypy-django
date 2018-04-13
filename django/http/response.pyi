@@ -4,7 +4,7 @@ import datetime
 from json import JSONEncoder
 from typing import Any, Dict, Iterable, Iterator, List, Optional, overload, Tuple, Type, Union
 
-from django.http.cookie import SimpleCookie
+from django.http.cookie import SimpleCookie as SimpleCookie
 import six
 
 class BadHeaderError(ValueError): ...

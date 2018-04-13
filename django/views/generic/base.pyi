@@ -1,6 +1,6 @@
 from typing import Any, Callable, Dict, List, Optional, Tuple, Type
 
-from django import http
+from django import http as http
 
 logger = ...  # type: Any
 

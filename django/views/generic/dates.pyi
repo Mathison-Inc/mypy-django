@@ -1,11 +1,11 @@
 import datetime
 from typing import Any, Dict, Optional, Sequence, Tuple, Type
 
-from django.db import models
-from django.http import HttpRequest, HttpResponse
-from django.views.generic.base import View
-from django.views.generic.detail import BaseDetailView, SingleObjectTemplateResponseMixin
-from django.views.generic.list import MultipleObjectMixin, MultipleObjectTemplateResponseMixin
+from django.db import models as models
+from django.http import HttpRequest as HttpRequest, HttpResponse as HttpResponse
+from django.views.generic.base import View as View
+from django.views.generic.detail import BaseDetailView as BaseDetailView, SingleObjectTemplateResponseMixin as SingleObjectTemplateResponseMixin
+from django.views.generic.list import MultipleObjectMixin as MultipleObjectMixin, MultipleObjectTemplateResponseMixin as MultipleObjectTemplateResponseMixin
 
 class YearMixin:
     year_format = ...  # type: str

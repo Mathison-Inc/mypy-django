@@ -2,7 +2,7 @@
 
 from typing import Any, Dict, IO, Iterator, Optional, Union
 from django.core.files import temp as tempfile
-from django.core.files.base import File
+from django.core.files.base import File as File
 
 class UploadedFile(File):
     content_type = ...  # type: Optional[str]

@@ -4,8 +4,8 @@
 
 from typing import Any, Callable, Dict, Iterable, List, Optional, Pattern, Tuple, Union
 
-from django.http.response import HttpResponse
-from django.utils.datastructures import MultiValueDict
+from django.http.response import HttpResponse as HttpResponse
+from django.utils.datastructures import MultiValueDict as MultiValueDict
 
 # Auxiliar types
 URLPattern = Union['RegexURLResolver', 'RegexURLPattern']

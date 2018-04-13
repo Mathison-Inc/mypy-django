@@ -1,10 +1,10 @@
 from typing import Any, Dict, List, Optional, Type
 
-from django.db import models
-from django.forms import models as model_forms, Form  # type: ignore  # This will be solved when adding forms module
-from django.http import HttpResponse, HttpRequest
-from django.views.generic.base import ContextMixin, TemplateResponseMixin, View
-from django.views.generic.detail import BaseDetailView, SingleObjectMixin, SingleObjectTemplateResponseMixin
+from django.db import models as models
+from django.forms import models as model_forms, Form as Form # type: ignore  # This will be solved when adding forms module
+from django.http import HttpResponse as HttpResponse, HttpRequest as HttpRequest
+from django.views.generic.base import ContextMixin as ContextMixin, TemplateResponseMixin as TemplateResponseMixin, View as View
+from django.views.generic.detail import BaseDetailView as BaseDetailView, SingleObjectMixin as SingleObjectMixin, SingleObjectTemplateResponseMixin as SingleObjectTemplateResponseMixin
 
 class FormMixin(ContextMixin):
     initial = ...  # type: Dict[str, object]

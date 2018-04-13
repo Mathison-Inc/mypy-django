@@ -1,8 +1,8 @@
 from typing import Any, Dict, List, Optional, Type
 
-from django.db import models
-from django.http import HttpResponse, HttpRequest
-from django.views.generic.base import ContextMixin, TemplateResponseMixin, View
+from django.db import models as models
+from django.http import HttpResponse as HttpResponse, HttpRequest as HttpRequest
+from django.views.generic.base import ContextMixin as ContextMixin, TemplateResponseMixin as TemplateResponseMixin, View as View
 
 class SingleObjectMixin(ContextMixin):
     model = ...  # type: Optional[Type[models.Model]]
